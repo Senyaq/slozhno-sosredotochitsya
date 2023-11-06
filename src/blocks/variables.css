@@ -14,4 +14,5 @@
   --bg-color: #000028;
   --main-padding: 20px;
   --bg-image: url(/images/cover-image-dark.png);
+  --hd-title-text: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
 }
