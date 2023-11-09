@@ -12,7 +12,31 @@
   --text-color: #353430;
   --bg-color: #fff1f7;
   --bg-image: url(../images/cover-image-light.png);
-  --accent-color: #ff8dcb;
+  --accent-color: #353430;
+  --accent-color-text-heading: #ff8dcb;
   --heading-logo: #ffc2e6;
   --main-title-color: #353430;
+  --accent-color-button: rgb(50 49 45 / 0.4);
+}
+
+.page.theme_light .header__rec {
+  display: none;
+}
+
+@media (prefers-color-scheme: light) {
+
+  :root {
+    --text-color: #353430;
+    --bg-color: #fff1f7;
+    --bg-image: url(../images/cover-image-light.png);
+    --accent-color: #353430;
+    --accent-color-text-heading: #ff8dcb;
+    --heading-logo: #ffc2e6;
+    --main-title-color: #353430;
+    --accent-color-button: rgb(50 49 45 / 0.4);
+  }
+
+  .header__rec {
+    display: none;
+  }
 }

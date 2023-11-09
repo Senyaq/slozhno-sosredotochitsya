@@ -8,6 +8,7 @@
   --text-color: #f1b2ce;
   --text-color-heading: var(--bg-color);
   --accent-color: #ff0070;
+  --accent-color-text-heading: #ff0070;
   --main-title-color: #ff0070;
   --heading-logo: #db00ff;
   --text-heading-color: var(--bg-heading-color);
@@ -15,4 +16,16 @@
   --main-padding: 20px;
   --bg-image: url(/images/cover-image-dark.png);
   --hd-title-text: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  --accent-color-button: rgb(255 0 112 / 0.4);
+}
+
+@media (max-width: 1023px) {
+  /* чтобы сохранить порядок медиа запроса в плагине('postcss-combine-media-query'); */
+}
+
+@media (max-width: 767px) {
+
+  :root {
+    --main-padding: 10px;
+  }
 }

@@ -12,10 +12,11 @@
   --text-color: #f1b2ce;
   --text-color-heading: var(--bg-color);
   --accent-color: #ff0070;
+  --accent-color-text-heading: #ff0070;
   --main-title-color: #ff0070;
   --heading-logo: #db00ff;
   --text-heading-color: var(--bg-heading-color);
   --bg-color: #000028;
-  --main-padding: 20px;
   --bg-image: url(/images/cover-image-dark.png);
+  --accent-color-button: rgb(255 0 112 / 0.4);
 }

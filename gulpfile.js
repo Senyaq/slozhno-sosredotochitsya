@@ -45,7 +45,7 @@ function css() {
          mediaquery(),
          cssnano()
     ];
-  return gulp.src('src/blocks/**/*.css')
+  return gulp.src(['src/blocks/fonts.css', 'src/blocks/variables.css', 'src/blocks/globals.css', 'src/blocks/style.css','src/blocks/light.css','src/blocks/dark.css'])
         .pipe(plumber())
         .pipe(concat('bundle.css'))
         .pipe(postcss(plugins))
