@@ -28,6 +28,7 @@ Mobil-first
 .header__content {
   position: relative;
   height: 100vh;
+  min-height: 768px;
   width: 100%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -104,6 +105,7 @@ Mobil-first
 
 .header__theme-menu-button_active {
   pointer-events: none;
+  outline: 1px solid var(--accent-color-button);
 }
 
 .heading__title__text {
@@ -113,7 +115,7 @@ Mobil-first
   font-weight: 700;
   line-height: 82%;
   color: var(--heading-logo);
-  text-shadow: 4px 4px 0 var(--accent-color);
+  text-shadow: 4px 4px 0 #ff0070;
   grid-area: focus;
   align-self: center;
   justify-self: flex-start;
@@ -122,7 +124,7 @@ Mobil-first
 }
 
 .word {
-  text-shadow: 4px 4px 0 var(--accent-color);
+  text-shadow: 4px 4px 0 var(--accent-color-text-heading);
   text-decoration: none;
 }
 
@@ -177,7 +179,10 @@ Mobil-first
 }
 
 .main {
-  background-color: var(--bg-color, #000028);
+  background-color: var(
+    --bg-color,
+    #000028
+  ); /* цвет фона указана в мэйн, т.к для всей страницы указан bg-image */
   grid-area: main;
   display: flex;
   flex-direction: column;
@@ -194,6 +199,7 @@ Mobil-first
 .footer {
   grid-area: footer;
   height: 100vh;
+  min-height: 768px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -444,5 +450,9 @@ Mobil-first
 
   .content__picture {
     gap: 10px;
+  }
+
+  .footer {
+    min-height: 0;
   }
 }

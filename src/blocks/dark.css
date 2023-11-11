@@ -20,3 +20,14 @@
   --bg-image: url(/images/cover-image-dark.png);
   --accent-color-button: rgb(255 0 112 / 0.4);
 }
+
+.page.theme_dark .header__rec {
+  display: flex;
+}
+
+@media (prefers-color-scheme: dark) {
+
+  .header__rec {
+    display: flex;
+  }
+}

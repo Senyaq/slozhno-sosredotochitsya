@@ -17,6 +17,8 @@
   --heading-logo: #ffc2e6;
   --main-title-color: #353430;
   --accent-color-button: rgb(50 49 45 / 0.4);
+  --text-heading-color: var(--text-color);
+  --text-color-heading: var(--text-color);
 }
 
 .page.theme_light .header__rec {
@@ -34,6 +36,8 @@
     --heading-logo: #ffc2e6;
     --main-title-color: #353430;
     --accent-color-button: rgb(50 49 45 / 0.4);
+    --text-color-heading: var(--text-color);
+    --text-heading-color: var(--text-color);
   }
 
   .header__rec {
